@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block navigation %}
+    <a href="/sign_up">Registrarse</a>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Si ya eres usuario empieza a reservar</h1>
+        <h5>Estas en el menjor lugar</h5>
+        <form action="sign_in" method="post">
+            {{ form.email }}
+            <br/>
+            {{ form.password }}
+            <br/>
+           {{ form.terms }} {{ form.terms.label }}
+        </form>
+    </section>
+{% endblock %}

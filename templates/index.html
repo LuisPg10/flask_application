@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+<!--NAvegación en diferentes partes de la aplicación-->
+{% block navigation %}
+    <a href="/sign_up">Registrarse</a>
+    <a href="/sign_in">Iniciar sesión</a>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Encuenta los mejores hoteles</h1>
+        <article>
+            <h2>Todo lo que necesitas</h2>
+            <img src="/static/images/room1.jpg" alt="room1" width="400"/>
+            <p>
+                Habitaciones bellas y elegantes para el comfort y
+                armonía donde puedes descansar y hacer lo que necesites.<br/>
+                Puedes sentirte tranquilo de trabajar, realizar tareas o
+                solo dormir una tranquila siesta.
+            </p>
+        </article>
+
+        <article>
+            <h2>Cuartos simples y de comfort</h2>
+            <img src="/static/images/modest_room.jpg" alt="modest_room" width="400"/>
+            <p>
+                Habitaciones modestas sin tantos elementos que puedan distraerte<br/>
+                ya sea que quieras estudiar o trabajar e incluso pasar un momento plácido
+                en tu intimidad en la simplicidad de una habitación.
+            </p>
+        </article>
+
+        <article>
+            <h2>Habitaciones premium</h2>
+            <img src="/static/images/super_room.jpg" alt="modest_room" width="400"/>
+            <p>
+                Habitaciones modestas sin tantos elementos que puedan distraerte<br/>
+                ya sea que quieras estudiar o trabajar e incluso pasar un momento plácido
+                en tu intimidad en la simplicidad de una habitación.
+            </p>
+        </article>
+    </section>
+{% endblock %}

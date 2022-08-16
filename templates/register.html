@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block navigation %}
+    <a href="/">Volver</a>
+    <a href="/sign_in">Iniciar sesión</a>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Cuentanos quien eres</h1>
+        <h5>Ingresa tus datos para el registro</h5>
+
+        <form action="/sign_up" method="post">
+            {{ form.email }}
+            <br/>
+            {{ form.name }}
+            {{ form.last_name }}
+            <br/>
+
+            {{ form.password }}
+            <br/>
+            {{ form.confirm }}
+            <br/>
+            {{ form.terms }}{{ form.terms.label }}
+            <br/>
+            {{ form.register }}
+        </form>
+    </section>
+{% endblock %}
