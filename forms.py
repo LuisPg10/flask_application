@@ -28,8 +28,9 @@ class UserRegister(BaseForm):
     )
 
     terms = BooleanField("Acepto los terminos y condiciones", validators = [DataRequired()])
-    register = SubmitField("Registrar", validators = [DataRequired()])
+    register = SubmitField("Registrar")
 
 class UserSession(BaseForm):
-    remember = BooleanField("Recordar", validators = [DataRequired()])
+    remember = BooleanField("Recordar")
+    sign_in = SubmitField("Ingresar")
 
