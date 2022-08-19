@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
 {% block navigation %}
-    <a href="/">Volver</a>
-    <a href="/sign_in">Iniciar sesión</a>
+    <a href="/" class="option first">
+        <i class="fas fa-arrow-left"></i> Volver
+    </a>
+    <a href="/sign_in" class="option right">Iniciar sesión</a>
 {% endblock %}
 
 {% block content %}

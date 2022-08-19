@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 
 {% block navigation %}
-    <a href="/sign_up">Registrarse</a>
+    <a href="/sign_up" class="option right">Registrarse</a>
 {% endblock %}
 
 {% block content %}
     <section>
         <h1>Si ya eres usuario empieza a reservar</h1>
         <h5>Estas en el mejor lugar</h5>
-        <form action="sign_in" method="post">
+        <form action="/sign_in" method="post">
             {{ form.email }}
             <br/>
             {{ form.password }}
             <br/>
            {{ form.remember }} {{ form.remember.label }}
+           <br/>
+           {{ form.sign_in }}
         </form>
     </section>
 {% endblock %}
