@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block navigation %}
+    <a href="/" class="option right">Salir</a>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Bienvenido</h1>
+        <h2>Habitaciones disponibles</h2>
+        <article>
+            <h2>Cuartos simples y de comfort</h2>
+            <img src="/static/images/modest_room.jpg" alt="modest_room" width="400"/>
+            <p>
+                Dos camas y vista a la calle, paredes de color blanco ubicado en el
+                séptimo piso.
+                <hr/>
+                <p>Precio 500.000</p>
+                <button class = "reserved">Reservar</button>
+            </p>
+        </article>
+        <article>
+            <h2>Cuartos simples y de comfort</h2>
+            <img src="/static/images/super_room.jpg" alt="modest_room" width="400"/>
+            <p>
+                Habitación grande con jacuzzi incluido, vista a la calle
+                ubicado en la suit de Baiyoke Tower.
+                <hr/>
+                <p>Precio 1.500.000</p>
+                <button class = "reserved">Reservar</button>
+
+            </p>
+        </article>
+    </section>
+{% endblock %}
