@@ -1,0 +1,41 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 3rem 0.8rem 3rem 0.8rem;
+}
+
+nav .option {
+    position: relative;
+    padding: 5px;
+    background-color: #efefef;
+    border: #efefef 1px solid;
+    border-radius: 20px;
+}
+
+nav .option:hover {
+    transition: background-color 0.6s ease;
+    background-color: crimson;
+    color: #ffffff;
+}
+
+header a {
+    color: gray;
+}
+
+footer {
+    background-color: crimson;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+div p {
+    color: #ffffff;
+}
