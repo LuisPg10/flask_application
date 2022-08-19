@@ -47,4 +47,5 @@ def session():
     elif request.method == "POST" and passed:
         return render_template("reservation.html", title = f"Bienvenido")
 
-app.run(port = 5000)
+if __name__ == "__main__":
+    app.run(port = 5000)
